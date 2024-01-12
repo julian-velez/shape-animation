@@ -1,0 +1,66 @@
+.geometric-animation {
+    position: relative;
+    width: 300px;
+    height: 200px;
+  }
+  
+  .shape1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c;
+    transform: rotate(45deg);
+    animation: shape1 2s ease-in-out infinite alternate;
+  }
+  
+  .shape2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #2980b9;
+    transform: rotate(45deg);
+    animation: shape2 2s ease-in-out infinite alternate;
+  }
+  
+  .shape3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #2ecc71;
+    transform: rotate(45deg);
+    animation: shape3 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes shape1 {
+    0% {
+      transform: rotate(45deg) translateX(0);
+    }
+    100% {
+      transform: rotate(45deg) translateX(200px);
+    }
+  }
+  
+  @keyframes shape2 {
+    0% {
+      transform: rotate(45deg) translateY(0);
+    }
+    100% {
+      transform: rotate(45deg) translateY(200px);
+    }
+  }
+  
+  @keyframes shape3 {
+    0% {
+      transform: rotate(45deg) translateX(0) translateY(0);
+    }
+    100% {
+      transform: rotate(45deg) translateX(200px) translateY(200px);
+    }
+  }
+  
